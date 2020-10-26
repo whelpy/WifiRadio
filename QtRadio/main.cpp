@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
     //tabs->addTab(new QWidget(),"Wifi");
     //tabs->addTab(new QWidget(),"System");
     
-    QFont * clockFont = new QFont("Arial", 34, QFont::Bold);      
+    QFont * clockFont = new QFont("3270", 34, QFont::Bold);      
     
     QString whiteTextSS = "QLabel { background-color : black; color : white; }";
     
@@ -54,26 +54,26 @@ int main(int argc, char *argv[])
     weatherLabel->setStyleSheet(whiteTextSS);
     weatherLabel->show();     
     
-    QFont * musicFont = new QFont("Arial", 12, QFont::Normal);      
+    QFont * musicFont = new QFont("3270", 12, QFont::Normal);      
 
     QLabel * musicLabel = new QLabel(&window);
     musicLabel->setFixedSize(320, 160);
     musicLabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-    musicLabel->setText("\nTitle:\nArtist:\nAlbum:\nGenre:\nBitrate:\nVolume:");
+    musicLabel->setText("\nTitle\nArtist\nAlbum\nGenre\nBitrate\nVolume");
     musicLabel->setAlignment(Qt::AlignLeft);
     musicLabel->setFont(*musicFont);
     musicLabel->move(0,60);
     musicLabel->show();   
     
-    QFont * musicFont2 = new QFont("Arial", 12, QFont::Bold); 
+    QFont * musicFont2 = new QFont("3270", 12, QFont::Bold); 
     
     QLabel * idLabel = new QLabel(musicLabel);
-    idLabel->setFixedSize(250, 160);
+    idLabel->setFixedSize(245, 160);
     idLabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
     idLabel->setText("\nSieben Köche\nIn Extremo\nSängerkrieg\nMedieval Folk Metal\n1104 kbps\n10");
     idLabel->setAlignment(Qt::AlignLeft);
     idLabel->setFont(*musicFont2);
-    idLabel->move(70,0);
+    idLabel->move(75,0);
     idLabel->show();      
     
     QLabel * statusLabel = new QLabel(&window);
