@@ -1,0 +1,36 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x0e\x00Q\x00t\x00R\x00a\x00d\x00i\x00o)
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=QtRadio
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Configured from ProjectItem=QtRadio,QtRadio
+Project Target=QtRadio,QtRadio
+Working Directory=file:///home/whelp/WifiRadio/QtRadio/build/
+isExecutable=false
+
+[Project]
+VersionControlSupport=kdevgit
+
+[QMake_Builder]
+Build_Folder=/home/whelp/WifiRadio/QtRadio/build
+Build_Type=0
+Extra_Arguments=
+Install_Prefix=
+QMake_Binary=/usr/bin/qmake
+
+[QMake_Builder][/home/whelp/WifiRadio/QtRadio/build]
+Build_Type=0
+Extra_Arguments=
+Install_Prefix=
+QMake_Binary=/usr/bin/qmake
+
+[SourceFileTemplates]
+LastUsedTemplate=/home/whelp/.local/share/kdevfiletemplates/template_descriptions/cpp_basic.desktop
