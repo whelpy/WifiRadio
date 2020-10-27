@@ -1,10 +1,17 @@
 #include <QApplication>
 #include <QtWidgets>
+#include "qmainwidget.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     app.setStyle("Fusion");
+    
+    //QSettingsWidget * settingsWidget = new QSettingsWidget();
+    
+    QMainWidget * mainWidget = new QMainWidget();
+    mainWidget->show();
+    
     QWidget window;
     window.resize(320, 240);
     
@@ -32,7 +39,7 @@ int main(int argc, char *argv[])
     //tabs->addTab(new QWidget(),"Wifi");
     //tabs->addTab(new QWidget(),"System");
     
-    QFont * clockFont = new QFont("3270", 34, QFont::Bold);      
+    QFont * clockFont = new QFont("ibm3270", 34, QFont::Bold);      
     
     QString whiteTextSS = "QLabel { background-color : black; color : white; }";
     
@@ -54,7 +61,7 @@ int main(int argc, char *argv[])
     weatherLabel->setStyleSheet(whiteTextSS);
     weatherLabel->show();     
     
-    QFont * musicFont = new QFont("3270", 12, QFont::Normal);      
+    QFont * musicFont = new QFont("ibm3270", 12, QFont::Normal);      
 
     QLabel * musicLabel = new QLabel(&window);
     musicLabel->setFixedSize(320, 160);
@@ -65,7 +72,7 @@ int main(int argc, char *argv[])
     musicLabel->move(0,60);
     musicLabel->show();   
     
-    QFont * musicFont2 = new QFont("3270", 12, QFont::Bold); 
+    QFont * musicFont2 = new QFont("ibm3270", 12, QFont::Bold); 
     
     QLabel * idLabel = new QLabel(musicLabel);
     idLabel->setFixedSize(245, 160);
@@ -84,7 +91,7 @@ int main(int argc, char *argv[])
     statusLabel->move(0,220);
     statusLabel->show();      
     
-    window.show();
+    //window.show();
 
     
     
