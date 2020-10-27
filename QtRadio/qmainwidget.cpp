@@ -1,3 +1,4 @@
+#include <QKeyEvent>
 #include "qmainwidget.h"
 #include "ui_qmainwidget.h"
 
@@ -17,8 +18,14 @@ QMainWidget::~QMainWidget()
 
 void QMainWidget::keyPressEvent(QKeyEvent *event)
 {
-    QSettingsWidget * settingsWidget = new QSettingsWidget();
-    settingsWidget->show();
+    //todo: up and down keys for volume
 
-    QWidget::keyPressEvent(event);
+    if(event->key() == Qt::Key_Escape)
+    {
+        this->hide();
+        QSettingsWidget * settingsWidget = new QSettingsWidget();
+        settingsWidget->show();
+    }
+    else
+        QWidget::keyPressEvent(event);
 }
