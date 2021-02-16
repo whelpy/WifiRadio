@@ -1,0 +1,2 @@
+apt-get install qt5-default
+apt-get install fonts-3270
