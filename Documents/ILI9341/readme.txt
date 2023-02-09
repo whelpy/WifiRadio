@@ -10,11 +10,13 @@ VCC - 4
 GND - 25
 LED - 15
 
-2. Run:
+2. Enable spi-spidev.in armbian-config
+3. Install kernel headers in armbian-config
+4. Run:
 
 # armbian-add-overlay spi-ili9341.dts
 
-3. For framebuffer console check /boot/armbianEnv.txt:
+5. For framebuffer console check /boot/armbianEnv.txt:
 
 extraargs="fbcon=map:0"
 

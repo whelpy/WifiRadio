@@ -2,3 +2,8 @@
 /QtRadio/*.o
 /QtRadio/build/*
 /QtRadio/debug/*
+/AvaRadio/.vs/AvaRadio/DesignTimeBuild/.dtbcache.v2
+/AvaRadio/.vs/AvaRadio/v16/.suo
+/Documents/ILI9341/*.bak
+/AvaRadio/AvaRadio/bin
+/AvaRadio/AvaRadio/obj
